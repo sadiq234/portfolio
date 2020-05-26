@@ -1,0 +1,474 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pro.css">
+    <style>
+        /* Created by Ramadan*/
+
+ *{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    font-family: 'PT Serif', serif;
+
+}
+
+.top-container{
+    padding: 4rem;
+    background-color:#673ab7;
+    text-align: center;
+}
+.top-heading{
+    text-transform: uppercase;
+    initial-letter: 1px;
+    font-weight: bold;
+    
+}
+.htext{
+    color: rgb(255, 255, 255);
+
+}
+.main-about-container{
+    padding: 4rem;
+    background-color: #000000;
+
+
+}
+.image-container{
+    text-align: center;
+    height:100px;
+    margin-bottom:2rem;
+    
+}
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+    
+
+.title-name-bar{
+    margin-top: 1rem;
+    position: absolute;
+    left: 50%;
+     background-color:rgba(255, 255, 0, 0.589);
+    padding: .3rem 2rem;
+    text-transform: uppercase;
+    font-size: .3rem;    
+    font-weight: normal;
+    letter-spacing: 2px; 
+}
+
+.socail-icon{
+    margin-top: 2rem;
+    color: azure;
+}
+
+.socail-icon i{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+ 
+
+.logo-bar{
+    color: blanchedalmond;
+}
+
+.logo-bar1{
+    margin-top: 4rem;
+}
+.logo-top{
+    font-size:5.6rem;
+    opacity:.2;
+}
+.about-text-heading{
+    text-transform: uppercase;
+    margin-top:-1.8rem;
+    margin-right: 1.6rem;
+    position: relative;
+    padding:.6rem 0;
+    display: inline-block;
+    margin-bottom: 2rem;
+    letter-spacing: 4px;
+}
+
+
+.about-text-heading::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    bottom: 0;
+    left: 50%;
+    background-color: blanchedalmond;
+}
+
+.about-myself{
+    color: rgb(192, 192, 191);
+    font-size: 1rem;
+    padding-bottom:3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.btn-tag{
+    padding:1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    background-color: #c4bd38 ;
+    border-radius: 5rem;
+    font-family: 'Lato',sans-serif;
+}
+
+.main-skill-container{
+    padding: 5rem;
+    background-color: #222121;
+
+}
+.skill-percentage{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    color: blanchedalmond;
+    text-transform: uppercase;
+   
+  
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    margin:1rem;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid  #494646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid  #fff200;
+    border-left-color: transparent;
+    transform: rotate(30deg);
+}
+
+.circle-js::after{
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transform: rotate(-55deg);
+}
+
+
+
+
+.percentage{
+    font-size: 1.2rem;
+}
+
+.lang-name{
+    font-size:1rem;
+}
+.main-refrence-container{
+    padding:2rem;
+    background-color:#000000 ;
+
+}
+.underline-bar1{
+    padding: 1px;
+    background-color: blanchedalmond;
+    margin-left:50%;
+    width:60%;
+
+}
+.logo-top1{
+    font-size:5.6rem;
+    opacity:.2;
+    margin-top:-4rem;
+    margin-bottom: 5rem;
+}
+.refrence-text{
+    padding:4rem 1rem;
+    background-color: blanchedalmond;
+    margin-top: 2rem;
+    position: relative;
+}
+.profile-image{
+    width: 70px;
+    height: 70px;
+    
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    transform: translate(-50%,-50%);
+
+}
+.profile-pic1{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid black;
+    
+}
+.main-contact-container{
+  padding: 2rem;
+    background-color: #222121;
+
+}
+.socail-icon1{
+    color: azure;  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    margin-left: -1.2rem;
+}
+ 
+.icon-name{
+    font-size: 1rem;
+    padding-left: 10px;
+    text-transform: uppercase;
+ 
+}
+.icon-contact{
+    padding-left:15px;
+
+}
+.email-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     
+}
+.input-text{
+     width: 90%;
+    padding: 1rem .5rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+ .btn-send{
+     text-decoration: none;
+     background-color:rgba(255, 255, 0, 0.589);
+     padding:0.6rem 0;
+     color: blanchedalmond;
+     font-weight: bold;
+     text-align: center;
+     width: 94%;
+ }
+ .bottom-icon{
+     padding: .1rem  1rem;
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+.text-position{
+text-align:right;
+}
+
+.shine-effect{
+  width: 80%;
+  margin: 5em auto;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000000, #21e612, #000);
+  letter-spacing: 5px;
+ -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine-anime 7s linear infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+.shine-effect a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+}
+
+@keyframes shine-anime {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="top-container">
+        <div class="top-heading">
+            <h1 class="heading-text">About me<span class="home-text">/home </span></h1>
+            <p class="shine-effect">
+           <b>Abubakar suraj</b>
+            <br />
+            <a href="https://www.facebook.com/devsadiq.suraj"> Visit Name dev_ramadan</a>
+        </p>
+        </div>
+    </nav>
+
+    <div class="main-about-container">
+        <div class="image-container">
+            <img class="profile-pic" src="user-img.jpg" alt="" class="user-img">
+            <div class="home-text"> <span class="text-position">
+                <h1>ramadan</h1><br><h1> Web Designer</h1>
+                </span>
+            </div>
+        </div>
+        <div class="self-container">
+            <div class="logo-bar">
+                <h1 class="logo-top">A</h1>
+                <h1 class="about-text-heading"> About me</h1>
+                
+            </div>
+            
+
+        </div>
+        <div class="about-myself">
+            <p> Hey, I,m a Abubakar this is my Portfolio, I'm Student of computer science so I have to say something about myself. Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with. Let me give a try to see what kind of image you have about me through my self-description. I hope that my impression about myself and your impression about me are not so different. Here it goes.</p>
+        </div>
+        <a class="btn-tag" href="#"> download cv</a>
+        <div class="socail-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </div>
+    </div>
+
+
+    <div class="main-skill-container">
+        <div class="logo-bar">
+            <h1 class="logo-top">M</h1>
+            <h1 class="about-text-heading">My skill</h1>
+           
+        </div>
+
+        <div class="skill-percentage">
+            <div class="skill-process">
+                <div class="circle">
+                    <h1 class="percentage" > 90%</h1>
+
+
+                </div> 
+                <h1 class="lang-name">html</h1>
+            </div>
+            <div class="skill-process">
+                <div class="circle">
+                   <h1 class="percentage" > 90%</h1>
+
+                </div>
+                <h1 class="lang-name">css</h1>
+            </div>
+            <div class="skill-process">
+                <div class="circle">
+                    <h1 class="percentage" > 90%</h1>
+
+                </div>
+                <h1 class="lang-name">JavaScript</h1>
+            </div>
+            <div class="skill-process">
+                <div class="circle circle-js">
+                    <h1 class="percentage" > 60%</h1>
+
+                </div>
+                <h1 class="lang-name">python</h1>
+            </div>
+
+        </div>
+
+    </div> 
+
+    <div class=" main-refrence-container">
+        <div class="logo-bar logo-bar1">
+             
+            <h1 class="about-text-heading">refrence</h1>
+           
+            <h1 class="logo-top1">R</h1>
+        </div>
+
+        <div class="refrence-text">
+            <div class="profile-image">
+                <img class="profile-pic1" src="" alt="" class="user-img">
+
+            </div>
+         Dev Ramadan
+        </div>
+    </div>
+    
+    <div class="main-contact-container">
+        <div class="logo-bar logo-bar1">
+             
+            <h1 class="about-text-heading">contact</h1>
+            
+            <h1 class="logo-top1">C</h1>
+        </div>
+
+        <div class="contact-container">
+            <div class="socail-icon1">
+            <i class="fa fa-phone-square icon-contact" aria-hidden="true"></i>
+             <p class="icon-name">phone</p>
+             <i class="fa fa-envelope icon-contact" aria-hidden="true"></i>
+            <p class="icon-name">email</p>
+            <i class="fa fa-wordpress icon-contact" aria-hidden="true"></i>
+            <p class="icon-name">website</p>
+        </div>
+        </div>
+
+     
+
+        <div class="email-container">
+
+            <div class="socail-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </div>
+
+            <input placeholder="Name" class="input-text" type="text">
+            <input placeholder="E-mail" class="input-text" type="text">
+            <textarea placeholder="Message"  class="input-text">Message</textarea>
+            <a  class="btn-send"href="surajsadiq38@gmail.com">SEND</a>
+       </div>
+
+        </div>
+    </div>
+    <div class="bottom-icon">
+        <div class="socail-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </div>
+ </div>
+</body>
+</html>
